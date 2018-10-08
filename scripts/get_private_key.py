@@ -12,11 +12,13 @@ def get_private_key(password: str, f: str) -> Account:
     with open(f, "r") as f:
         data = json.load(f)
 
+    # Returning the Account result with the prefix 0x removed
     return Account.decrypt(password=password, keyfile_json=data).hex().strip("0x")
 
 
 if __name__ == "__main__":
-    keystore = input("Keystore name (it must exist in the same directory as this script or you must provide a full path to it): ")
+    # Reading the keystore file name from the user
+    keystore = input("Keystore name (it must exist in the same directory as this script or you must provide a full path to it!): ")
     password = getpass.getpass("Password: ")
 
     print(get_private_key(password=password, f=keystore))

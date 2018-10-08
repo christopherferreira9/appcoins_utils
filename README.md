@@ -17,3 +17,4 @@ pip3 install -r requirements.txt
 ```
 
 At this point you should be good to go and run the script you need.
+All scripts were made to be run with python3.
