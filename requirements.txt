@@ -39,7 +39,7 @@ prompt-toolkit==1.0.15
 ptyprocess==0.6.0
 py-ecc==1.4.3
 pycparser==2.18
-pycryptodome==3.6.6
+pycryptodome==3.19.1
 pyethash==0.1.27
 Pygments==2.7.4
 pyparsing==2.2.0
